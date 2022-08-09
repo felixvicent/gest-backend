@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "start": "node build/server.js",
-    "build": "tsc & prisma generate",
+    "build": "tsc & prisma migrate deploy",
     "postinstall": "yarn build"
   },
   "dependencies": {
